@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("img/hero.jpg") center / cover;
+}
+
+.hero-titulo {
+    font-family: "Arial Black", Arial, sans-serif;
+    font-size: clamp(3rem, 10vw, 6rem);
+}
+
+.banner {
+    height: 390px;
+}
+
+.card-img {
+    height: 150px;
+}
+
+.texto {
+    line-height: 1.9;
+}
+
+.bg-cinza {
+    background-color: #f2f2f2;
+}
+
+.btn-prumo,
+.btn-prumo:hover {
+    background-color: #e8573a;
+    color: #fff;
+}
