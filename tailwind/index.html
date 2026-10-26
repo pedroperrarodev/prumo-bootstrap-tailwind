@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prumo | Gastos e Investimentos</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="font-[Arial] text-[#333]">
+    <header class="flex h-[60vh] items-center justify-center bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/hero.jpg)] bg-cover bg-center">
+        <h1 class="font-['Arial_Black'] text-5xl font-black uppercase text-white md:text-8xl">Prumo</h1>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-4 py-12">
+        <h2 class="mb-1 text-4xl font-light uppercase md:text-5xl">Calcule antes de decidir</h2>
+        <p class="mb-6 text-xl">Planejamento de gastos e investimentos com as taxas oficiais do dia.</p>
+
+        <img src="img/planejamento.jpg" alt="Calculadora sobre documentos financeiros" class="mb-6 h-[390px] w-full object-cover">
+
+        <p class="mb-4 leading-[1.9]">
+            A Prumo ajuda você a decidir com números reais. Antes de assumir um gasto novo ou aplicar o
+            dinheiro guardado, mostramos quanto o investimento rende, quanto a inflação vai pesar no seu
+            orçamento e quanto uma compra em dólar custa de verdade.
+        </p>
+        <p class="leading-[1.9]">
+            Hoje a Selic está em <strong id="selic">carregando...</strong>, o CDI em <strong id="cdi">carregando...</strong>,
+            o IPCA acumulado em 12 meses em <strong id="ipca">carregando...</strong> e o dólar comercial em
+            <strong id="dolar">carregando...</strong>. Esses valores são atualizados automaticamente e usados nos cálculos abaixo.
+        </p>
+    </main>
+
+    <section class="bg-[#f2f2f2] py-12">
+        <div class="mx-auto grid max-w-6xl gap-12 px-4 md:grid-cols-3">
+            <article>
+                <h3 class="mb-6 text-xl uppercase">Investimentos</h3>
+                <img src="img/investimentos.jpg" alt="Planta crescendo sobre moedas" class="mb-6 h-[150px] w-full object-cover">
+                <p class="mb-4 text-sm">R$ 1.000,00 aplicados a 100% do CDI viram <strong id="investimento">...</strong> em 12 meses.</p>
+                <a href="https://www.bcb.gov.br/controleinflacao/historicotaxasjuros" target="_blank" class="inline-block rounded-full bg-[#e8573a] px-6 py-2 text-white">SELIC</a>
+            </article>
+
+            <article>
+                <h3 class="mb-6 text-xl uppercase">Gastos</h3>
+                <img src="img/gastos.jpg" alt="Pessoa pagando com cartão no notebook" class="mb-6 h-[150px] w-full object-cover">
+                <p class="mb-4 text-sm">Gastos de R$ 3.000,00 por mês passam a custar <strong id="gastos">...</strong> daqui a um ano com a inflação atual.</p>
+                <a href="https://www.ibge.gov.br/explica/inflacao.php" target="_blank" class="inline-block rounded-full bg-[#e8573a] px-6 py-2 text-white">IPCA</a>
+            </article>
+
+            <article>
+                <h3 class="mb-6 text-xl uppercase">Câmbio</h3>
+                <img src="img/cambio.jpg" alt="Notas de dólar espalhadas" class="mb-6 h-[150px] w-full object-cover">
+                <p class="mb-4 text-sm">Uma compra de US$ 100,00 sai por <strong id="cambio">...</strong> na cotação comercial de hoje.</p>
+                <a href="https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes" target="_blank" class="inline-block rounded-full bg-[#e8573a] px-6 py-2 text-white">DÓLAR</a>
+            </article>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
