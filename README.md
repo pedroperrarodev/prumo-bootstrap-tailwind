@@ -1,21 +1,23 @@
-# Prumo - Bootstrap e Tailwind CSS
+# Prumo: Bootstrap e Tailwind CSS
 
-Atividade prática de Front-End da FIAP: desenvolver o mesmo layout duas vezes, uma com Bootstrap e outra com Tailwind CSS, mantendo os mesmos elementos e a mesma organização visual, para comparar a experiência com as duas tecnologias.
+Atividade prática de Front End da FIAP: desenvolver o mesmo layout duas vezes, uma com Bootstrap e outra com Tailwind CSS, mantendo os mesmos elementos e a mesma organização visual, para comparar a experiência com as duas tecnologias.
 
 O site é da Prumo, uma empresa fictícia de cálculos de gastos e investimentos. A página segue o template da atividade: banner com o nome da empresa, seção com título, subtítulo, imagem e dois parágrafos, e uma seção cinza com três colunas (título, imagem, texto e botão).
 
 ## Organização do repositório
 
-- Branch `bootstrap`: desenvolvimento da versão com Bootstrap.
-- Branch `tailwind`: desenvolvimento da versão com Tailwind CSS.
-- Branch `main`: as duas versões finalizadas nas pastas `bootstrap/` e `tailwind/`.
+* Branch `bootstrap`: desenvolvimento da versão com Bootstrap.
+* Branch `tailwind`: desenvolvimento da versão com Tailwind CSS.
+* Branch `main`: as duas versões finalizadas nas pastas `bootstrap/` e `tailwind/`, este README e a análise crítica.
+
+A análise comparando as duas tecnologias está em `analise_critica_bootstrap_tailwind.docx`.
 
 ## Consumo de API
 
 As duas versões usam o mesmo `script.js`, que busca os indicadores do dia com `fetch`:
 
-- BrasilAPI (`https://brasilapi.com.br/api/taxas/v1`): Selic, CDI e IPCA acumulado em 12 meses.
-- AwesomeAPI (`https://economia.awesomeapi.com.br/json/last/USD-BRL`): cotação do dólar comercial.
+* BrasilAPI (`https://brasilapi.com.br/api/taxas/v1`): Selic, CDI e IPCA acumulado em 12 meses.
+* AwesomeAPI (`https://economia.awesomeapi.com.br/json/last/USD-BRL`): cotação do dólar comercial.
 
 Com esses valores a página mostra as taxas no texto e calcula os exemplos dos cards: quanto R$ 1.000,00 rendem em 12 meses no CDI, quanto R$ 3.000,00 de gastos mensais vão custar com o IPCA e quanto sai uma compra de US$ 100,00. As chamadas são feitas uma vez ao abrir a página; se alguma API falhar, os valores aparecem como "indisponível".
 
